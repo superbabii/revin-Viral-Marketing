@@ -24,10 +24,10 @@ function Home(props: any) {
           </div>
           <div className="my-2">
             <span onClick={() => handle()}>Log in</span>
-            {/* <ButtonEle
-            title="Book a demo"
-            style={{ width: "auto", marginLeft: 30 }}
-          /> */}
+            <ButtonEle
+              title="Book a demo"
+              style={{ width: "auto", marginLeft: 30 }}
+            />
           </div>
         </div>
         <div className="landing-content">
@@ -37,7 +37,7 @@ function Home(props: any) {
               <p className="mt-4">
                 Reward Loyalty. Expand Reach. Let AI Handle the Details.
               </p>
-              {/* <ButtonEle title="Book a demo" style={{ width: "auto" }} /> */}
+              <ButtonEle title="Book a demo" style={{ width: "auto" }} />
             </div>
             <div>
               <img src={ReferralImage} style={{ width: 500 }} />
@@ -91,16 +91,7 @@ function Home(props: any) {
           </div>
         </div>
       </div>
-      <div className="footbar-home">
-        2023 Reinvent, All rights reserved.{" "}
-        <Link to="/tos" style={{ color: "#19b799" }}>
-          Terms
-        </Link>{" "}
-        and{" "}
-        <Link to="/policy" style={{ color: "#19b799" }}>
-          Privacy
-        </Link>
-      </div>
+      <Footbar />
     </>
   );
 }
